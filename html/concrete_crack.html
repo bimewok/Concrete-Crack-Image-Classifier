@@ -14267,7 +14267,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Author: Ben Garrett<br>
 Created Date: 12/28/2020</p>
-<p><em>The following article is writen as a Jupyter Notebook. All code can be run and tweaked by clicking the 'Open in Colab' button.</em></p>
+<p><em>The following article is written as a Jupyter Notebook. All code can be run and tweaked by clicking the 'Open in Colab' button.</em></p>
 
 </div>
 </div>
@@ -14275,7 +14275,7 @@ Created Date: 12/28/2020</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>One of the most promising uses of machine learning for image classification is the automation of inspection tasks using photos collected by drones.</p>
 <p>Maintaining infrastructure is essential to public safety and for cost-savings by catching problems early before they become expensive to repair. In the United States, there is a huge backlog of inspections of bridges, dams, levees and other large concrete structures. Reducing the cost and increasing the efficiency of inspection of such structures could save millions of dollars and potentially human lives. Drones are becoming more affordable and their controlability and photo performance is making them an attractive tool for inspection processes. Using drones to collect photos of infrastructure may save time and money in itself, but this can be compounded if the image processing could be automated with machine learning.</p>
-<p>In this project, images of concrete labled as 'cracked' or 'not_cracked' will be classified using a convolutional neural network. It is easy to imagine a local government deploying a model like this to reduce inspection costs, increase the amount of infrastructure that can be inspected in a given year, and to increase public public safety.</p>
+<p>In this project, images of concrete labeled as 'cracked' or 'not_cracked' will be classified using a convolutional neural network. It is easy to imagine a local government deploying a model like this to reduce inspection costs, increase the amount of infrastructure that can be inspected in a given year, and to increase public public safety.</p>
 
 </div>
 </div>
@@ -14297,7 +14297,7 @@ deep convolutional neural network," 2016 IEEE International Conference on Image 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14361,13 +14361,13 @@ Ready to go!
             /val
                 /crack
                 /no_crack</code></pre>
-<p>Using Keras' image dataset from directory tool, we can pull in the photos, resize them if necessary, and do any other type of preprocessing we want. The tool lets you specify the validation split for the train data, but you could also have a seperate 'val' directory as well. The last two lines let you specify the amount of persistant memory for the two datasets to speed training.</p>
+<p>Using Keras' image dataset from directory tool, we can pull in the photos, resize them if necessary, and do any other type of preprocessing we want. The tool lets you specify the validation split for the train data, but you could also have a separate 'val' directory as well. The last two lines let you specify the amount of persistent memory for the two datasets to speed training.</p>
 <h4 id="**The-following-code-downloads-around-500-MB-of-photos-into-the-current-working-directory,-it-may-take-a-bit.-The-last-code-cell-will-delete-all-downloaded-data.">**The following code downloads around 500 MB of photos into the current working directory, it may take a bit. The last code cell will delete all downloaded data.<a class="anchor-link" href="#**The-following-code-downloads-around-500-MB-of-photos-into-the-current-working-directory,-it-may-take-a-bit.-The-last-code-cell-will-delete-all-downloaded-data.">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
@@ -14446,7 +14446,7 @@ classes: [&#39;crack&#39;, &#39;no_crack&#39;]
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
@@ -14493,7 +14493,7 @@ classes: [&#39;crack&#39;, &#39;no_crack&#39;]
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
@@ -14551,7 +14551,7 @@ classes: [&#39;crack&#39;, &#39;no_crack&#39;]
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_checkpoint</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">ModelCheckpoint</span><span class="p">(</span>
@@ -14667,7 +14667,7 @@ Epoch 6/30
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;predicted&#39;</span><span class="p">,</span> <span class="s1">&#39;actual&#39;</span><span class="p">,</span> <span class="s1">&#39;probability&#39;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;raw_logits&#39;</span><span class="p">])</span>
@@ -14750,14 +14750,13 @@ overall test accuracy: 0.9955
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Visualize-Model-Error">Visualize Model Error<a class="anchor-link" href="#Visualize-Model-Error">&#182;</a></h2><p>With a test accuracy of over 99% , there were only a handful of classification errors out of 4000 test images! Not bad at all, although it seems like the mistakes it made should have been easy to catch. Let's take a look at some of them.<br>
-** The formatting of the chart may look a bit funny if there are fewer photos in the specific class than there are cells in the subplot...</p>
+<h2 id="Visualize-Model-Error">Visualize Model Error<a class="anchor-link" href="#Visualize-Model-Error">&#182;</a></h2><p>With a test accuracy of over 99% , there were only a handful of classification errors out of 4000 test images! Not bad at all, although it seems like the mistakes it made should have been easy to catch. Let's take a look at some of them.<br></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">classes</span><span class="p">:</span>
@@ -14834,13 +14833,13 @@ overall test accuracy: 0.9955
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Take-a-look-at-the-probability-distribution-for-the-incorrect-classifications">Take a look at the probability distribution for the incorrect classifications<a class="anchor-link" href="#Take-a-look-at-the-probability-distribution-for-the-incorrect-classifications">&#182;</a></h2><p>The model was supprisingly confident on a few of the errors. One could decrease the false negative rate by filtering predictions with low probabilities (after calibration). In this context, the concequences of a false negative are high compared to those of a false positive, so a implemented system should err on the side of caution. Depending on the type of inspection a system like this would be used to improve, a single false negative could have serious consequences. Let's take a closer look:</p>
+<h2 id="Take-a-look-at-the-probability-distribution-for-the-incorrect-classifications">Take a look at the probability distribution for the incorrect classifications<a class="anchor-link" href="#Take-a-look-at-the-probability-distribution-for-the-incorrect-classifications">&#182;</a></h2><p>The model was surprisingly confident on a few of the errors. One could decrease the false negative rate by filtering predictions with low probabilities (after calibration). In this context, the consequences of a false negative are high compared to those of a false positive, so a implemented system should err on the side of caution. Depending on the type of inspection a system like this would be used to improve, a single false negative could have serious consequences. Let's take a closer look:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -14899,7 +14898,7 @@ False negative mean prob: 87.85260753198104
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;actual&#39;</span><span class="p">],</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;predicted&#39;</span><span class="p">],</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14999,7 +14998,7 @@ False negative mean prob: 87.85260753198104
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">crack</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;predicted&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;crack&#39;</span><span class="p">)]</span>
@@ -15043,13 +15042,13 @@ False negative mean prob: 87.85260753198104
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The kernal density estimation plot suggests there are probabilities over 100%, which there are not; this is an artifact of the kde smoothing algorythm. It seems as though there should be more uncertainty in some of the classifications. We can take a closer look at this by making probability reliability diagram for the model:</p>
+<p>The kernal density estimation plot suggests there are probabilities over 100%, which there are not; this is an artifact of the kde smoothing algorithm. It seems as though there should be more uncertainty in some of the classifications. We can take a closer look at this by making probability reliability diagram for the model:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">prob_no_crack</span> <span class="o">=</span> <span class="p">[]</span>
@@ -15112,7 +15111,7 @@ False negative mean prob: 87.85260753198104
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Ideally, there would be the same distribution of probabilities as values (on a zero to one scale) to be able to fully trust the model's stated probability for a given prediction. The model built above is not perfectly calibrated, and would benefit from some type of calibration for a final model system to be useful. Research into the true meaning of these probabilities in deep neural networks is still quite young. There are some failry simple calibration techniques (like isotonic regression), and for the sake of time I will skip this step and show the effect of setting probability thresholds for the model.</p>
+<p>Ideally, there would be the same distribution of probabilities as values (on a zero to one scale) to be able to fully trust the model's stated probability for a given prediction. The model built above is not perfectly calibrated, and would benefit from some type of calibration for a final model system to be useful. Research into the true meaning of these probabilities in deep neural networks is still quite young. There are some fairly simple calibration techniques (like isotonic regression), and for the sake of time I will skip this step and show the effect of setting probability thresholds for the model.</p>
 
 </div>
 </div>
@@ -15124,7 +15123,7 @@ False negative mean prob: 87.85260753198104
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">thresholds</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1000</span><span class="p">)]</span>
@@ -15209,7 +15208,7 @@ False negative mean prob: 87.85260753198104
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># delete all files downloaded in this notebook</span>
@@ -15227,7 +15226,7 @@ False negative mean prob: 87.85260753198104
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>The model designed here is quite simple and very effective. It is important to keep in mind this is a unusually simple computer vision problem, and the data is unusually clean. Even so, it is impressive that such a simple neural network can do so well. Although having any false negatives may be unacceptable in some circumstances, in many contexts a skilled professional would have a higher mistake rate than the model has. Additionally, further tuning and calibration of the model may produce probabilities that are more predictable for difficult images. Another tactic you could use to impove performance would be to augment some of the images the model had trouble with (rotate, change hue, stretch, mirror) to impove representation of difficult photos in the training dataset.</p>
+<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>The model designed here is quite simple and very effective. It is important to keep in mind this is a unusually simple computer vision problem, and the data is unusually clean. Even so, it is impressive that such a simple neural network can do so well. Although having any false negatives may be unacceptable in some circumstances, in many contexts a skilled professional would have a higher mistake rate than the model has. Additionally, further tuning and calibration of the model may produce probabilities that are more predictable for difficult images. Another tactic you could use to improve performance would be to augment some of the images the model had trouble with (rotate, change hue, stretch, mirror) to improve representation of difficult photos in the training dataset.</p>
 
 </div>
 </div>
